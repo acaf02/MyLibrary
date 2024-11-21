@@ -27,6 +27,16 @@ module.exports = {
         filename: 'app.js',
         path: __dirname + '/build',
     },
+    resolve: {
+        fallback: {
+            // Polyfills para os módulos que não são mais incluídos por padrão no Webpack 5
+            crypto: require.resolve('crypto-browserify'),
+            path: require.resolve('path-browserify'),
+            vm: require.resolve('vm-browserify'),
+            buffer: require.resolve('buffer/'),
+            stream: require.resolve('stream-browserify'),
+        },
+    },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'estilo.css' }),
         new CopyWebpackPlugin({
