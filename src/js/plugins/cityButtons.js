@@ -7,11 +7,11 @@ function filterByCity(city) {
     $('[wm-city]').each(function (i, e) {
         const isTarget = $(e).attr('wm-city') === city || city === null;
         if (isTarget) {
-            $(e).parent().removeClass('d-nome'); // Mostra o item
+            $(e).parent().removeClass('d-nome');
             $(e).fadeIn(duration);
         } else {
             $(e).fadeOut(duration, () => {
-                $(e).parent().addClass('d-nome'); // Esconde o item
+                $(e).parent().addClass('d-nome');
             });
         }
     });
@@ -22,9 +22,8 @@ const cityButtons = $('[wm-city-buttons]');
 $.fn.cityButtons = function () {
     const cities = new Set();
 
-    // Corrigindo o erro no nome do atributo para 'wm-city'
     $('[wm-city]').each(function (i, e) {
-        cities.add($(e).attr('wm-city')); // Adiciona as cidades ao Set
+        cities.add($(e).attr('wm-city'));
     });
 
     // Criação dos botões de cidade
@@ -32,7 +31,7 @@ $.fn.cityButtons = function () {
         const btn = $('<button>')
             .addClass(['btn', 'btn-info'])
             .html(city)
-            .click(() => filterByCity(city)); // Callback para filtrar por cidade
+            .click(() => filterByCity(city)); // Callback to filter by city
         return btn;
     });
 
@@ -40,21 +39,21 @@ $.fn.cityButtons = function () {
     const btnAll = $('<button>')
         .addClass(['btn', 'btn-info', 'active'])
         .html('Todas')
-        .click(() => filterByCity(null)); // Mostrar todas as cidades
+        .click(() => filterByCity(null)); 
 
     btns.push(btnAll);
 
     // Agrupar os botões em um botão de grupo
     const btnGroup = $('<div>')
         .addClass(['btn-group'])
-        .append(btns); // Adiciona os botões ao grupo
+        .append(btns); // Add the buttons to the group
 
-    $(this).html(btnGroup); // Insere o grupo de botões no elemento alvo
+    $(this).html(btnGroup); // Insert the button group into the target element
 
     return this;
 };
 
-// Inicialização quando o conteúdo HTML for carregado
+// Initialization when HTML content is loaded
 onLoadHtmlSucess(function () {
-    $('[wm-city-buttons]').cityButtons(); // Aplica o método aos botões de cidade
+    $('[wm-city-buttons]').cityButtons();
 });

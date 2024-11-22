@@ -1,37 +1,37 @@
-// Remova a importação errada do file-loader
 import $ from 'jquery';
 
 const loadHtmlSucessCallBack = [];
 
-// Função para adicionar o callback na lista, se não estiver já presente
+// Function to add the callback to the list, if it is not already present
 export function onLoadHtmlSucess(callback) {
     if (!loadHtmlSucessCallBack.includes(callback)) {
         loadHtmlSucessCallBack.push(callback);
     }
 }
 
-// Função para carregar os includes
+// Function to load includes
 function loadIncludes(parent = 'body') {
-    // Encontrar elementos com o atributo wm-include
+    // Find elements with the wm-include attribute
     $(parent).find('[wm-include]').each(function (i, e) {
-        const url = $(e).attr('wm-include'); // Pega o valor do atributo wm-include
-        
+        const url = $(e).attr('wm-include'); // Get the value of the wm-include attribute
+
         // Fazer a requisição AJAX
         $.ajax({
             url,
             success(data) {
-                $(e).html(data); // Insere o conteúdo no elemento
-                $(e).removeAttr('wm-include'); // Remove o atributo wm-include após a inclusão
+                $(e).html(data);
+                $(e).removeAttr('wm-include');
 
-                // Chama os callbacks registrados
+
+                // Call registered callbacks
                 loadHtmlSucessCallBack.forEach(callback => callback(data));
 
-                // Chama recursivamente para os filhos, se houver
+                // Recursively call children, if any
                 loadIncludes(e);
             }
         });
     });
 }
 
-// Chama a função inicial para carregar os includes
+// Call the initial function to load the includes
 loadIncludes();
