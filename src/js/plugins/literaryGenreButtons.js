@@ -3,7 +3,7 @@ import { onLoadHtmlSucess } from '../core/includes'
 
 const duration = 600
 
-function filterByCity(literaryGenre) {
+function filterByliteraryGenre(literaryGenre) {
     $('[wm-literaryGenre]').each(function (i, e) {
         const isTarget = $(e).attr('wm-literaryGenre') === literaryGenre || literaryGenre === null;
         if (isTarget) {

@@ -1,7 +1,7 @@
 <div wm-include="/pages/galery/galeryHeader.html"></div>
 <div class="container mt-5">
   <div class="row justify-content-center pb-5">
-    <div wm-city-buttons></div>
+    <div wm-literaryGenre-buttons></div>
   </div>
   <div class="row d-flex justify-content-center" id="gallery">
     <!-- Images and phrases will be dynamically generated here -->
@@ -14,29 +14,29 @@
       url: "/imgs/ny.jpg",
       quote:
         '“You could rattle the stars," she whispered. "You could do anything, if only you dared. And deep down, you know it, too. That’s what scares you most.”',
-      city: "NY",
+      literaryGenre: "Naaa",
     },
     {
       url: "/imgs/ny.jpg",
       quote: "“The only way to do great work is to love what you do.”",
-      city: "NY",
+      literaryGenre: "NY",
     },
     {
       url: "/imgs/ny.jpg",
       quote:
         "“Success is not final, failure is not fatal: It is the courage to continue that counts.”",
-      city: "NY",
+      literaryGenre: "NY",
     },
     {
       url: "/imgs/ny.jpg",
       quote:
         "“It does not matter how slowly you go as long as you do not stop.”",
-      city: "NY",
+      literaryGenre: "NY",
     },
     {
       url: "/imgs/ny.jpg",
       quote: "“You must be the change you wish to see in the world.”",
-      city: "NY",
+      literaryGenre: "NY",
     },
   ];
 
@@ -50,7 +50,7 @@
                 <div class="flip-container">
                     <div class="flipper">
                         <div class="front">
-                            <img src="${data.url}" alt="Image" class="img-fluid mb-4" wm-city="${data.city}">
+                            <img src="${data.url}" alt="Image" class="img-fluid mb-4" wm-literaryGenre="${data.literaryGenre}">
                         </div>
                         <div class="back">
                             <p>${data.quote}</p>
