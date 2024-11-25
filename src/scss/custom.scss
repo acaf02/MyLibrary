@@ -60,3 +60,15 @@ footer {
     flex-direction: column;
     box-sizing: border-box;
   }
+
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .img-side {
+    width: 150px; 
+    height: auto;
+  }
+  
