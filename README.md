@@ -1,71 +1,91 @@
-Projeto de Galeria utilizando bootstrap/jquary/webpack
+# Book Gallery Project
+
+## 🛠️ About the Project
+
+![Sample Image](image.png)
+
+> This project is a modern web-based gallery built using Bootstrap, jQuery, and Webpack. It showcases a personal collection of physical books along with memorable quotes from each one. The application aims to provide an elegant and organized way to explore literature and inspiration through visual cards.
+
+---
+## 🎯 Motivation
+
+The motivation behind this project is to create a digital archive of my personal library, highlighting the most impactful quotes from each book. The goal is to celebrate literature and make it easily accessible and enjoyable through a clean, interactive interface.
+
+---
+## 🟢 Project Status
+
+The project is still under development and the next updates will focus on the following tasks:
+
+- [x] Basic gallery layout ans structure 
+- [x] Integration with Bootstrap and jQuery
+- [x] Quote display functionlity
+- [ ] Add all book entries and their quotes
+- [ ] Implement star-based rating system
+
+---
+
+## 🧰 Technologies Used
+
+This project uses the following technologies:
+
+- **Frontend**: HTML5, CSS3, Bootstrap, jQuery
+- **Tooling**: Webpack
 
 
-# Nome do projeto
+---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+## ⚙️ Installation
 
-<img src="imagem.png" alt="Exemplo imagem">
+### 🖥️ Prerequisites
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+Make sure you have the following items installed in your environment:
 
-### Ajustes e melhorias
+- [Node.js](https://nodejs.org) (version 12 or higher)
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+### 🔧 Installation on macOS/Linux
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
-
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-
-- Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-- Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-- Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
-
-## 🚀 Instalando <nome_do_projeto>
-
-Para instalar o <nome_do_projeto>, siga estas etapas:
-
-Linux e macOS:
-
-```
-<comando_de_instalação>
-```
-
-Windows:
-
-```
-<comando_de_instalação>
-```
-
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
+```bash
+git clone https://github.com/acaf02/MyLibrary.git
+cd project
+yarn install
 
 ```
-<exemplo_de_uso>
+
+### 💻 Installation on Windows
+
+```bash
+git clone https://github.com/acaf02/MyLibrary.git
+cd project
+npm install
+
 ```
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
+## 🚀 Usage
 
-## 📫 Contribuindo para <nome_do_projeto>
+This gallery allows users to browse books and read curated quotes. Below are the basic steps to get started with the project:
 
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+Once you have installed the project, you can run it with the following command:
+```bash
+yarn start # or npm start
 
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
-5. Crie a solicitação de pull.
+```
+This will start the server and open the application in your browser at the URL: http://localhost:9000.
 
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+## 🤝 Contributions
 
+Contributions are always welcome! To contribute, follow these steps:
+
+Fork this repository.<br>
+Create a branch for your feature `git checkout -b feature-name`.<br>
+Make the necessary changes.<br>
+Make a commit with a clear and concise message `git commit -m 'Add new feature'`.<br>
+Push to your fork `git push origin feature-name`.<br>
+Open a pull request to the original repository.<br>
+
+🔄 Before contributing, make sure the code is working properly. Run tests or review the code to ensure quality!
+
+## 📜 License
+
+This project is under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
+
+### ⭐ Did you like the project? Leave a star to help the community!
