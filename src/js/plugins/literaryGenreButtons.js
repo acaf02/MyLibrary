@@ -6,16 +6,18 @@ const duration = 600
 function filterByliteraryGenre(literaryGenre) {
     $('[wm-literaryGenre]').each(function (i, e) {
         const isTarget = $(e).attr('wm-literaryGenre') === literaryGenre || literaryGenre === null;
+        const card = $(e).closest('.col-12.col-md-6.col-lg-3');
+        
         if (isTarget) {
-            $(e).parent().removeClass('d-nome');
-            $(e).fadeIn(duration);
+            card.removeClass('d-nome').fadeIn(duration);
         } else {
-            $(e).fadeOut(duration, () => {
-                $(e).parent().addClass('d-nome');
+            card.fadeOut(duration, () => {
+                card.addClass('d-nome');
             });
         }
     });
 }
+
 
 const literaryGenreButtons = $('[wm-literaryGenre-buttons]');
 
