@@ -2,7 +2,7 @@
 
 ## 🛠️ About the Project
 
-![Sample Image](image.png)
+![Sample Image](imagem.png)
 
 > This project is a modern web-based gallery built using Bootstrap, jQuery, and Webpack. It showcases a personal collection of physical books along with memorable quotes from each one. The application aims to provide an elegant and organized way to explore literature and inspiration through visual cards.
 
