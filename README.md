@@ -28,7 +28,7 @@ The project is still under development and the next updates will focus on the fo
 
 This project uses the following technologies:
 
-- **Frontend**: HTML5, CSS3, Bootstrap, jQuery
+- **Frontend**: HTML5, CSS3, Bootstrap, Node.js, jQuery
 - **Tooling**: Webpack
 
 
