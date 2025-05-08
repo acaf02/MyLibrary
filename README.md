@@ -55,7 +55,7 @@ yarn install
 
 ```bash
 git clone https://github.com/acaf02/MyLibrary.git
-cd project
+cd MyLibrary
 npm install
 
 ```
