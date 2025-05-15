@@ -16,9 +16,9 @@ The motivation behind this project is to create a digital archive of my personal
 
 The project is still under development and the next updates will focus on the following tasks:
 
-- [x] Basic gallery layout ans structure 
+- [x] Basic gallery layout and structure 
 - [x] Integration with Bootstrap and jQuery
-- [x] Quote display functionlity
+- [x] Quote display functionality
 - [ ] Add all book entries and their quotes
 - [ ] Implement star-based rating system
 
@@ -28,8 +28,8 @@ The project is still under development and the next updates will focus on the fo
 
 This project uses the following technologies:
 
-- **Frontend**: HTML5, CSS3, Bootstrap, Node.js, jQuery
-- **Tooling**: Webpack
+- **Frontend**: HTML5, CSS3, Bootstrap, Node.js, jQuery.
+- **Tooling**: Webpack.
 
 
 ---
@@ -46,7 +46,7 @@ Make sure you have the following items installed in your environment:
 
 ```bash
 git clone https://github.com/acaf02/MyLibrary.git
-cd project
+cd MyLibrary
 yarn install
 
 ```
@@ -67,7 +67,6 @@ This gallery allows users to browse books and read curated quotes. Below are the
 Once you have installed the project, you can run it with the following command:
 ```bash
 yarn start # or npm start
-
 ```
 This will start the server and open the application in your browser at the URL: http://localhost:9000.
 
